@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pico:
+    build: ./pico-toolchain
+    # tty: true
+    volumes:
+      - ./pico-volume-root:/root
+    environment:
+      - PICO_SDK_PATH=/root/pico-sdk/
